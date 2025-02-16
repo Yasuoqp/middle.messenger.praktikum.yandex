@@ -1,0 +1,16 @@
+<div class="form-page">
+  <h1>{{title}}</h1>
+  <div class="form-content">
+    <form id="{{formId}}">
+      <div class="form-fields">
+        {{#each fields}}
+          {{{this}}}
+        {{/each}}
+      </div>
+    </form>
+  </div>
+  <div class="form-btn">
+    {{{button}}}
+    <a href="{{linkHref}}">{{linkText}}</a>
+  </div>
+</div>

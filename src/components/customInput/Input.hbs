@@ -1,0 +1,10 @@
+<div class="input-wrapper {{class}}">
+  <input
+    type="{{type}}"
+    placeholder=" "
+    onfocus="this.nextElementSibling.classList.add('active')"
+    onblur="if(!this.value) this.nextElementSibling.classList.remove('active')"
+  />
+  <label class="floating-label">{{placeholder}}</label>
+  <div class="underline"></div>
+</div>
