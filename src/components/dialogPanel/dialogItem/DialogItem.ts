@@ -1,5 +1,6 @@
 import Handlebars from 'handlebars';
-import dialogItemTemplate from './DialogItem.hbs?raw'; 
+import dialogItemTemplate from './DialogItem.hbs?raw';
+import './dialogItem.scss';
 const compiledDialogItemTemplate = Handlebars.compile(dialogItemTemplate);
 
 export function DialogItem(context: {
@@ -9,5 +10,5 @@ export function DialogItem(context: {
     time: string;
     notification: string;
 }) {
-    return compiledDialogItemTemplate(context); 
+    return compiledDialogItemTemplate(context);
 }

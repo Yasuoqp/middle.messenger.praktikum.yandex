@@ -1,4 +1,3 @@
-import eslintPlugin from 'vite-plugin-eslint';
 import eslintPluginImport from "eslint-plugin-import";
 import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
 

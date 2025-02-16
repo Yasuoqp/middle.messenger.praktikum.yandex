@@ -1,15 +1,15 @@
 <div class="dialog-item">
-    <img class="dialog-img" src="{{url}}" alt="avatar">
+    <div class="dialog-img"></div>
     <div class="dialog-item__content">
-        <div class="dialog-item__title">
-            {{name}}
-        </div>
-        <div class="dialog-item__message">
-            {{message}}
-        </div>
-        <div class="dialog-item__info">
-            <span class="dialog-item__time">{{time}}</span>
-            <span class="dialog-item__notification">{{notification}}</span>
+        <div class="dialog-item__main">
+            <div class="dialog-item__header">
+                <div class="dialog-item__title">{{name}}</div>
+                <span class="dialog-item__time">{{time}}</span>
+            </div>
+            <div class="dialog-item__footer">
+                <div class="dialog-item__message">{{message}}</div>
+                <span class="dialog-item__notification">{{notification}}</span>
+            </div>
         </div>
     </div>
 </div>
