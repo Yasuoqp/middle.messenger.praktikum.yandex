@@ -1,0 +1,12 @@
+.chat-container {
+  display: flex;
+  height: 98vh;
+  background: #f0f2f5;
+}
+
+.chat-sidebar {
+  width: 310px;
+  background: #FBFBFB;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+}
