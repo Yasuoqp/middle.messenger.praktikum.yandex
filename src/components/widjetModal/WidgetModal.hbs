@@ -1,0 +1,12 @@
+<div class="widget-modal">
+  <button 
+    class="widget-modal__trigger" 
+    aria-expanded="false"
+    aria-haspopup="true"
+  >⋮</button>
+  <div class="widget-modal__menu" role="menu">
+    {{#each menuItems}}
+      <button class="widget-modal__item" role="menuitem">{{this}}</button>
+    {{/each}}
+  </div>
+</div>

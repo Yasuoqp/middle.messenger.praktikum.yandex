@@ -1,14 +1,21 @@
 <div class="chat-main">
   <div class="chat-header">
     <div class="chat-partner">
-      <div class="partner-avatar" style="background-image: url({{partner.avatarUrl}})"></div>
+      <div
+        class="partner-avatar"
+        style="background-image: url({{partner.avatarUrl}})"
+      ></div>
       <div class="partner-info">
         <h2 class="partner-name">{{partner.name}}</h2>
         <p class="partner-status">{{partner.status}}</p>
       </div>
     </div>
-  </div>
-  
+    
+    <div>
+      {{{widgetModal}}}
+    </div>
+  </div> 
+
   <div class="chat-messages">
     {{#each messages}}
       <div class="message {{this.type}}">
@@ -19,12 +26,20 @@
       </div>
     {{/each}}
   </div>
-  
+
   <div class="chat-input">
-    <textarea placeholder="Введите сообщение..." class="message-input"></textarea>
+    <textarea
+      placeholder="Введите сообщение..."
+      class="message-input"
+    ></textarea>
     <button class="send-button">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
       </svg>
     </button>
   </div>
