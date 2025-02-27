@@ -18,7 +18,8 @@
       "@style/*": ["src/assets/styles/*"],
       "@templates/*": ["src/templates/*"],
       "@utils/*": ["src/utils/*"]
-    }
+    },
+    "types": []
   },
   "include": ["src/**/*"]
 }
