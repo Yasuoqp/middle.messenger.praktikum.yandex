@@ -1,6 +1,6 @@
 import { ChatPage } from '@src/pages/Chat/Chat';
-import { LoginPage } from '../pages/Login/Login';
-import { RegisterPage } from '../pages/Register/Register';
+import { LoginPage } from '../pages/login/Login';
+import { RegisterPage } from '../pages/register/Register';
 import { ProfilePage } from '@src/pages/Profile/Profile';
 
 const routes: Record<string, () => string> = {

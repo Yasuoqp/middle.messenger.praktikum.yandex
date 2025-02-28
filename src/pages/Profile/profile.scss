@@ -1,9 +1,70 @@
-.profile-container{
-    height: 100%;
-    
-    .profile-container_back{
-        height: 100%;
-        background-color: #b4b3b3;
-        min-height: 100vh;
+.profile-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+  .profile-sidebar {
+    background-color: #FBFBFB;
+    border-right: 1px solid #EAEAEA;
+    display: flex;
+  }
+
+  .profile-content {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    .profile-avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background-color: #EFEFEF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .profile-avatar-image {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+      }
     }
+
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .profile-details {
+        .profile-field {
+          align-items: center;
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .profile-back-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem;
+
+    .profile-back-arrow {
+      color: #fff;
+      font-size: 20px;
+      transition: color 0.3s ease;
+      background-color: #3369F3;
+      border-radius: 50%;
+      padding: 5px;
+
+
+      &:hover {
+        color: #666666;
+      }
+    }
+  }
 }
