@@ -1,0 +1,78 @@
+.dialog-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+
+    &:hover {
+        background-color: rgb(0 0 0 / 5%);
+    }
+
+    .dialog-img {
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background-color: #e0e0e0;
+    }
+
+    &__content {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__time {
+        color: #999;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__message {
+        color: #666;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__notification {
+        background-color: #007bff;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-size: 11px;
+        flex-shrink: 0;
+    }
+}
